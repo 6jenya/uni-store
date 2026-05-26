@@ -71,11 +71,7 @@ body::after {
 
 .navbar {
 
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    width: 100%;
+    position: relative;
 
     display: flex;
     justify-content: space-between;
@@ -84,10 +80,6 @@ body::after {
     padding: 20px 60px;
 
     background: rgba(10, 10, 10, 0.85);
-
-    backdrop-filter: blur(10px);
-
-    z-index: 1000;
 
     border-bottom: 1px solid rgba(255,255,255,0.08);
 
@@ -579,8 +571,6 @@ footer {
 
 /* MOBILE */
 
-@media (max-width: 900px) {
-
   .hero-content {
 
     flex-direction: row;
@@ -600,7 +590,6 @@ footer {
 
     font-size: 14px;
   }
-}
 
 /* HERO BADGE */
 
@@ -1271,10 +1260,7 @@ section h2::after {
 
 /* MOBILE IMPROVEMENTS */
 
-@media (max-width: 600px) {
-
   .hero-text h1 {
-
     font-size: 36px;
   }
 
@@ -1299,7 +1285,6 @@ section h2::after {
 
     font-size: 34px;
   }
-}
 
 /* PARALLAX FEEL */
 
