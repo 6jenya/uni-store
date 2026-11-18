@@ -21,6 +21,7 @@ a{color:inherit}
 .hero h1{font:400 clamp(36px,5.4vw,64px)/1.02 var(--fd);margin:14px 0 18px;letter-spacing:-.01em;text-transform:none}
 .lead{font-size:clamp(17px,1.6vw,19px);color:#C9CBD1;max-width:34em;margin:0 0 26px}
 .addr{color:#8E929C;font-size:14.5px;margin:18px 0 0}
+.addr a{color:#FFB37E;text-decoration:none}
 .status-pill,.status{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600}
 .status-pill{padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.08);margin:0}
 .status-pill:empty,.status:empty{display:none}
