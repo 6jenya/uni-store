@@ -14,13 +14,13 @@
 <link rel="icon" type="image/png" href="images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Russo+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HardwareStore", "name": "UNI — будівельний центр", "url": "https://6jenya.github.io/uni-store/", "telephone": "+380776026767", "image": "https://6jenya.github.io/uni-store/images/photo4.jpg", "logo": "https://6jenya.github.io/uni-store/images/logo.jpg", "address": {"@type": "PostalAddress", "streetAddress": "вул. Садова, 53", "addressLocality": "Київ", "addressRegion": "Осокорки", "addressCountry": "UA"}, "geo": {"@type": "GeoCoordinates", "latitude": 50.3831069, "longitude": 30.6133799}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "08:30", "closes": "19:00"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "09:00", "closes": "17:00"}]}</script>
 </head>
 <body><a class="skip" href="#main">До вмісту</a>
 <header class="hdr"><div class="wrap hdr-in">
   <a class="brand" href="index.html" aria-label="UNI — на головну"><img src="images/logo.jpg" alt="UNI будівельний центр" width="160" height="32"></a>
-  <nav class="nav" aria-label="Меню"><a href="#catalog">Каталог</a><a href="#services">Послуги</a><a href="#contacts">Контакти</a></nav>
+  <nav class="nav" aria-label="Меню"><a href="#catalog">Каталог</a><a href="#calc-sec">Калькулятор</a><a href="#services">Послуги</a><a href="#contacts">Контакти</a></nav>
   <a class="hdr-call" href="tel:+380776026767"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>+38 077 602 67 67</span></a>
 </div></header>
 <main id="main">
@@ -32,11 +32,39 @@
     <div class="btns"><a class="btn" href="tel:+380776026767"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Подзвонити</a><a class="btn ghost-d" href="https://www.google.com/maps/dir/?api=1&destination=50.3831069,30.6133799&destination_place_id=ChIJ-XjFNgDF1EARsE3lZlV7TGE" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Прокласти маршрут</a></div>
     <p class="addr">вул. Садова, 53 &nbsp;/&nbsp; Пн–Сб 08:30–19:00, Нд 09:00–17:00 &nbsp;/&nbsp; <a href="https://www.google.com/maps/search/?api=1&query=UNI%20%D0%B1%D1%83%D0%B4%D1%96%D0%B2%D0%B5%D0%BB%D1%8C%D0%BD%D0%B8%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80&query_place_id=ChIJ-XjFNgDF1EARsE3lZlV7TGE" target="_blank" rel="noopener">★ 4,9 на Google</a></p>
   </div>
-  <div class="hero-ph"><img src="images/photo4.jpg" alt="Торговий зал UNI" width="600" height="800" fetchpriority="high"><img src="images/photo1.jpg" alt="Відділ електроінструменту" width="600" height="800"></div>
+  <div class="stage">
+    <div id="scene3d" class="scene3d" role="img" aria-label="Тривимірна сцена: цегла на палеті, двотавр, дошки, цемент, фарба, труби й плитка"><img class="fallback" src="images/photo4.jpg" alt="" width="600" height="800"></div>
+    <p class="scene-tip" id="scene-tip">Натисни на товар, щоб відкрити відділ</p>
+  </div>
 </div></section>
 <section class="sec" id="catalog"><div class="wrap">
   <div class="sec-h"><h2 class="h2">Відділи магазину</h2><p>Ціни й наявність підкажемо телефоном — на складі все змінюється щодня.</p></div>
   <div class="tags"><a class="tag" href="metal.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16M4 19h16M12 5v14M8 5v2M16 5v2M8 17v2M16 17v2"/></svg><b>Металопрокат</b><small>Труба, арматура, кутник, швелер</small></a><a class="tag" href="pilomaterialy.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="5" rx="1"/><rect x="3" y="13" width="18" height="5" rx="1"/><path d="M7 8.5h6M10 15.5h7"/></svg><b>Пиломатеріали</b><small>Дошка, брус, рейка, ОСБ</small></a><a class="tag" href="bulk.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h20L15 9l-3 4-2-3z"/><path d="M8 20l3-5"/></svg><b>Сипучі матеріали</b><small>Цемент, пісок, щебінь, керамзит</small></a><a class="tag" href="repair.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="14" height="6" rx="1.5"/><path d="M17 6h3v5h-8v3"/><rect x="10.5" y="14" width="3" height="7" rx="1"/></svg><b>Для ремонту</b><small>Суміші, гіпсокартон, фарба</small></a><a class="tag" href="laminat.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 5h11v4H3zM14 5h7v4h-7M3 10h6v4H3zM9 10h12v4H9M3 15h13v4H3zM16 15h5v4h-5"/></svg><b>Ламінат</b><small>Ламінат і підкладка</small></a><a class="tag" href="plitka.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1"/><rect x="13" y="3" width="8" height="8" rx="1"/><rect x="3" y="13" width="8" height="8" rx="1"/><rect x="13" y="13" width="8" height="8" rx="1"/></svg><b>Тротуарна плитка</b><small>Плитка, бордюри, блоки</small></a><a class="tag" href="santehnika.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9h9a3 3 0 0 1 3 3v2"/><path d="M8 9V5h4v4M16 14v2"/><path d="M16 19.5c0 .8-.7 1.5-1.5 1.5S13 20.3 13 19.5 14.5 17 14.5 17s1.5 1.7 1.5 2.5z"/></svg><b>Сантехніка</b><small>Труби, змішувачі, бойлери</small></a><a class="tag" href="electric.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg><b>Електрика</b><small>Кабель, автомати, розетки</small></a><a class="tag" href="instrument.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0 5 5L12 19a2.1 2.1 0 0 1-3-3l7.5-7.5a4 4 0 0 1-2-2z"/><path d="m6 18-2 2"/></svg><b>Інструменти</b><small>Ручний та електроінструмент</small></a><a class="tag" href="rent.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg><b>Прокат інструменту</b><small>Оренда на день і тиждень</small></a><a class="tag" href="sad-gorod.html"><span class="hole" aria-hidden="true"></span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4 3-7 8-7 0 5-3 7-8 7z"/><path d="M12 14c0-3-2.5-5-7-5 0 4 2.5 5 7 5z"/></svg><b>Сад і город</b><small>Насіння, добрива, інвентар</small></a></div>
+</div></section>
+<section class="sec calc-sec" id="calc-sec"><div class="wrap">
+  <div class="sec-h"><h2 class="h2">Порахуйте матеріали</h2><p>Скільки цементу на фундамент, плитки на двір чи ламінату на кімнату — за хвилину, до поїздки в магазин.</p></div>
+  <div class="calc" id="calc" data-phone="+380776026767">
+    <div class="c-tabs" role="tablist"><button role="tab" data-tab="concrete" aria-selected="true">Бетон</button><button role="tab" data-tab="tiles" aria-selected="false">Тротуарна плитка</button><button role="tab" data-tab="laminate" aria-selected="false">Ламінат</button></div>
+    <div class="c-body">
+      <div class="c-in">
+        <div data-pane="concrete"><div class="c-grid">
+          <label>Довжина, м<input id="c-l" inputmode="decimal" value="6"></label><label>Ширина, м<input id="c-w" inputmode="decimal" value="0.4"></label><label>Висота, см<input id="c-h" inputmode="decimal" value="60"></label>
+          <label class="w">Марка бетону<select id="c-m"><option value="m150">М150 — підбетонка, доріжки</option><option value="m200" selected>М200 — стяжка, фундамент паркану</option><option value="m300">М300 — фундамент будинку</option></select></label>
+        </div><p class="c-hint">Стрічковий фундамент, стяжка чи майданчик: довжина × ширина × висота.</p></div>
+        <div data-pane="tiles" hidden><div class="c-grid">
+          <label class="w">Площа, м²<input id="t-a" inputmode="decimal" value="20"></label>
+          <label class="w">Плитка<select id="t-t"><option value="brick">Цеглинка 200×100 мм</option><option value="sq30">Квадрат 300×300 мм</option><option value="sq40">Квадрат 400×400 мм</option></select></label>
+          <label class="w">Запас на підрізку<select id="t-z"><option value="5">5% — прямі доріжки</option><option value="10">10% — складна форма</option></select></label>
+        </div></div>
+        <div data-pane="laminate" hidden><div class="c-grid">
+          <label>Довжина кімнати, м<input id="l-l" inputmode="decimal" value="4.5"></label><label>Ширина, м<input id="l-w" inputmode="decimal" value="3.2"></label>
+          <label class="w">м² в упаковці<input id="l-p" inputmode="decimal" value="2.13"></label>
+          <label class="chk w"><input type="checkbox" id="l-d"> Укладання по діагоналі</label>
+        </div></div>
+      </div>
+      <div class="c-out" id="c-out" aria-live="polite"></div>
+    </div>
+  </div>
 </div></section>
 <section class="sec dark" id="services"><div class="wrap">
   <h2 class="h2">Що ми робимо, крім продажу</h2>
@@ -73,6 +101,8 @@
   <p class="ftr-c">вул. Садова, 53, Київ · <a href="tel:+380776026767">+38 077 602 67 67</a> · Пн–Сб 08:30–19:00, Нд 09:00–17:00</p>
 </div></footer>
 <div class="dock"><a class="btn" href="tel:+380776026767"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Подзвонити</a><a class="btn ghost" href="https://www.google.com/maps/dir/?api=1&destination=50.3831069,30.6133799&destination_place_id=ChIJ-XjFNgDF1EARsE3lZlV7TGE" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>Маршрут</a></div>
+<script src="js/calc.js?v=1" defer></script>
+<script type="module" src="js/scene.js?v=1"></script>
 <script>
 (() => {
   const f = new Intl.DateTimeFormat('uk-UA', {timeZone: 'Europe/Kyiv', hour: '2-digit', minute: '2-digit', hour12: false});
